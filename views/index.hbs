@@ -1,0 +1,9 @@
+<div class="view-posts">
+    {{#each posts}}
+    <a class="post-item" href={{this.id}} style="padding: 20px 0;">
+        <h3>{{this.title}}</h3>
+        <p>{{this.content}}</p>
+    </a>
+    {{/each}}
+
+</div>

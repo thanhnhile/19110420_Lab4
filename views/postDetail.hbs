@@ -1,0 +1,20 @@
+<div class="post-detail">
+    <h2>{{post.title}}</h2>
+    <p>{{post.content}}</p>
+    <div class="btn-group">
+        <a class="del" href="http://localhost:5000/delete/{{post.id}}">Delete</a>
+        <a class="edit" href="http://localhost:5000/edit/{{post.id}}">Edit</a>
+    </div>
+    <h3>Comments</h3>
+    <form action="http://localhost:5000/{{post.id}}/addComment" method="post" class="comment-form">
+        <input type="text" placeholder="Comment here.." name="comment"/>
+        <input type="submit" value="Send"/>
+    </form>
+    <ul class="comments">
+        {{#each post.comments}}
+        <li>
+            {{this}}
+        </li>
+        {{/each}}
+    </ul>
+</div>

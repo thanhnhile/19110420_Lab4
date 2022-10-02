@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    width: 100vw;
+    height: 100vh;
+    background: #cccccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+}
+
+.main {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #fff;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.content {
+    width: 78%;
+    padding: 40px 15px;
+    background: #fff;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    background-color: #cccccc;
+}
+
+p {
+    width: 100%;
+    font-size: 1.4rem;
+    text-justify: newspaper;
+}
+
+.view-posts .post-item {
+    display: block;
+    padding: 20px 15px;
+    margin-bottom: 5px;
+}
+
+.post-detail {
+    margin-bottom: 30px;
+}
+
+.post-detail h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.post-detail p {
+    margin-bottom: 20px;
+}
+
+.post-detail h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+.post-item p{
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.post-item h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 8px;
+    outline: 0;
+}
+
+.post-form input {
+    margin-bottom: 15px;
+    width: 600px;
+}
+
+textarea {
+    height: 300px;
+    min-width: 600px;
+    max-width: 800px;
+    padding: 5px;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.post-form button[type="submit"] {
+    width: 600px;
+    padding: 15px;
+    display: block;
+    border: 0;
+    outline: 0;
+    background-color: green;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.text-error {
+    text-align: center;
+    color: red;
+}
+
+.comment-form input[type="text"] {
+    width: 600px;
+}
+
+.comments li {
+    list-style-type: none;
+    font-size: 1.4rem;
+    width: fit-content;
+    padding: 15px 20px;
+    background-color: darkgrey;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.btn-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.btn-group a {
+    font-size: 1.6rem;
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-group .del {
+    background: red;
+}
+
+.btn-group .edit {
+    background: darkorange;
+}
