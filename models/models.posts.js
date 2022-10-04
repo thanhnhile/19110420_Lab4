@@ -53,8 +53,7 @@ module.exports = {
     getPostById
 }
 function main (){
-    addPost('HTML,CSS','Hoc vui gan chet alo alo');
-    addPost('JS,CSS, TS','Hoc vui gan chet alo alo');
-    console.log(posts);
+    addPost('HTML,CSS','Học lập trình Front-End cơ bản');
+    addPost('JS,Node JS','Học lập trình Back-End cơ bản');
 }
 main();
